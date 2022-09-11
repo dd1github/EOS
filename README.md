@@ -7,3 +7,13 @@ Training a model with EOS consists of several steps:
 3. Perform minority class data augmentation in feature embedding space with EOS, using EOS.py and save output.
 4. Train a classifier with EOS generated minority class augmentations plus the original training data in FE space, with cifar_train_os.py.
 5. Reassemble the CNN so that the original extraction network contains an updated classifier, with reassemble.py.
+
+Please note that we trained our models with a single NVIDIA 3070 GPU using the following packages:
+- cudatoolkit 11.1.1
+- imbalanced learn 0.9.0
+- python 3.7.1
+- pytorch 1.9.0
+- scikit learn 1.0.2
+- spyder 5.0.5
+- tensorboard 1.15.0
+- torchvision 0.10.0
